@@ -1,0 +1,23 @@
+name: First Workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+permissions:
+  contents: read
+
+concurrency:
+  group: peru-rutea-database-deploy
+  cancel-in-progress: false
+
+jobs:
+  apply-scripts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
