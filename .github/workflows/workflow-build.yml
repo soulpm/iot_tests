@@ -21,3 +21,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Install PostgreSQL client
+        run: |
+          echo "Testing workflow"   
