@@ -24,3 +24,4 @@ jobs:
       - name: Install PostgreSQL client
         run: |
           echo "Testing workflow"   
+          echo "Hello testing :)"
