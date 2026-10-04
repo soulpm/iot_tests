@@ -23,4 +23,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Install PostgreSQL client
         run: |
-          echo "Testing workflow"   
+          echo "🐼 Testing workflow"   
+          echo "🙌 Hello testing :)"
